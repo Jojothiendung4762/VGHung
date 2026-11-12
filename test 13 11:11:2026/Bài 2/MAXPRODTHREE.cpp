@@ -49,7 +49,6 @@ int main() {
                     sort(zyx.begin(),zyx.end());
                     if (zyx.size() < 3) continue;
                     kq = max({kq,(ll)zyx[0] * zyx[1] * zyx[zyx.size() - 1],(ll)zyx[zyx.size() - 1] * zyx[zyx.size() - 2] * zyx[zyx.size() - 3]});
-                    cout << kq;
                 }
             }
         }
