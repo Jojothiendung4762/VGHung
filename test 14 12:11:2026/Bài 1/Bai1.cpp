@@ -25,16 +25,16 @@ int main() {
         if (dem[s[r]] == 0) khac++;
         dem[s[r]]++;
         if (r - l + 1 < k) continue;
+        if (r - l + 1 > k) {
+            dem[s[l]]--;
+            if (dem[s[l]] == 0) khac--;
+            l++;
+        }
         if (r - l + 1 == k) {
             if (khac > toida) {
                 toida = khac;
                 kq = s.substr(l,k);
             }
-        }
-        if (r - l + 1 > k) {
-            dem[s[l]]--;
-            if (dem[s[l]] == 0) khac--;
-            l++;
         }
     }
     cout << toida << " " << kq;
