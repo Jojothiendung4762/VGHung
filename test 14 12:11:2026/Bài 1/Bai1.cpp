@@ -27,11 +27,11 @@ int main() {
         if (r - l + 1 < k) continue;
         if (r - l + 1 == k) {
             if (khac > toida) {
+                toida = khac;
                 kq = s.substr(l,k);
             }
-            toida = max(toida,khac);
         }
-        while (r - l + 1 >= k) {
+        if (r - l + 1 > k) {
             dem[s[l]]--;
             if (dem[s[l]] == 0) khac--;
             l++;
