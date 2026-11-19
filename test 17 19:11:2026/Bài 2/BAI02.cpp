@@ -10,9 +10,9 @@ int main() {
     cin.tie(nullptr);
     int l,r,k;
     cin >> l >> r >> k;
-    vector<int> souoc(r + 1);
-    for (int i = 1;i <= r;i++) {
-        for (int j = i;j <= r;j += i) {
+    vector<int> souoc(r + 1,1);
+    for (int i = 1;i <= r / 2;i++) {
+        for (int j = i * 2;j <= r;j += i) {
             souoc[j]++;
         }
     }
