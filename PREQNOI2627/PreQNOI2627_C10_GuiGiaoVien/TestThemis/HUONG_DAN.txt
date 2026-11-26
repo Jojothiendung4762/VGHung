@@ -1,0 +1,56 @@
+KY THI SO 10 - KHAO SAT DOI TUYEN HSG THPT - MON TIN HOC - NAM HOC 2026-2027
+==========================================================================
+
+Nguon de (da Viet hoa, doi boi canh; moi bai mot nuoc):
+  DIGITS : Baekjoon Online Judge (Han Quoc) - Bai 1748 "Viet noi cac so 1"; subtask 2 mo rong
+           N toi 10^17. https://www.acmicpc.net/problem/1748
+  SEVENS : USACO 2016 January, Silver (Hoa Ky) - Bai 2 "Subsequences Summing to Sevens";
+           subtask 3 mo rong N toi 10^6. https://usaco.org/index.php?page=viewproblem2&cpid=595
+  POSTER : Olympic Tin hoc Ba Lan lan thu XV (2007/2008), Vong 1 - "Plakatowanie"
+           https://szkopul.edu.pl/problemset/  (POI XV, etap I)
+  PRISON : NOIP 2010 Nang cao (Trung Quoc) - "Giam giu toi pham" (Luogu P1525); subtask 3 mo rong
+           N toi 10^5, M toi 2*10^5. https://www.luogu.com.cn/problem/P1525
+Bai 1, 2 o muc de - trung binh. Bai 3, 4: subtask dau quen thuoc, subtask cuoi phan loai.
+
+1. Statements/          : de thi PreQNOI2627_C10_Statement.pdf (dan trang bang LaTeX, 4 trang)
+                          va PreQNOI2627_C10_Statement.docx (ban Word de chinh sua, 5 trang).
+                          Statements/LaTeX/ : file .tex goc (bien dich XeLaTeX).
+2. Tasks/               : bo test cham bang Themis, moi bai 40 test
+                          Tasks/<TEN_BAI>/TESTxx/<TEN_BAI>.INP, <TEN_BAI>.OUT + Settings.cfg
+                          Settings.cfg da cau hinh san: 1 giay, 1024 MB, diem moi test (bang duoi),
+                          so sanh output bo qua khoang trang (C1LinesWordsIgnoreCase).
+                          Test.zip = ban nen cua 4 thu muc bai.
+3. Editorial/Jury/      : loi giai C++14 cho tung subtask (TEN_BAI_SUBk.CPP);
+                          TEN_BAI.CPP = loi giai day du; TEN_BAI.PY = loi giai day du bang Python.
+                          Code trinh bay theo phong cach su pham: dau moi file co chu thich ten bai,
+                          nguon, y tuong, do phuc tap; cac buoc Doc - Xu ly - Ghi duoc danh so;
+                          ten bien co nghia; khong dung de quy sau (an toan voi ngan xep cua Themis).
+                          Bien dich: g++ -std=c++14 -O2 (chuan C++14 cua Themis). Code.zip = ban nen.
+   Contestants/Jury/    : loi giai day du dat ten theo Themis (TEN_BAI.cpp) de cham thu.
+4. Editorial/Slides/    : bai giang huong dan (Beamer 16:9, PDF + .tex, bien dich bang XeLaTeX).
+5. Editorial/Generator/ : chuong trinh sinh test (gen.py), kiem tra rang buoc (validate.py),
+                          ma MD5 cua bo test (MD5SUMS.txt).
+
+Thoi gian 1 giay/test, bo nho 1024 MB. Cac vi du trong de la TEST01, TEST02 cua moi bai.
+Ngon ngu: C++ va Python (theo cau truc de HSG cap tinh Quang Ninh).
+
+KIEM TRA BO TEST
+- Validator kiem tra moi test dung rang buoc chung va rang buoc cua subtask chua no
+  (PRISON: khong lap cap, a khac b).
+- Loi giai day du dung 160/160 test, thoi gian lon nhat khoang 0,07 giay.
+- Moi loi giai SUBk dung toan bo test cua subtask k; loi giai cua subtask truoc bi loai
+  (sai/qua gio) o phan lon test cua cac subtask sau.
+- Doi chieu khoang 1.500 bo test nho ngau nhien voi loi giai trau doc lap (DIGITS: dem do dai xau;
+  SEVENS: thu moi doan; POSTER: de quy chia doan theo chieu cao nho nhat; PRISON: thu 2^N cach chia).
+- 14 loi giai sai co y deu bi bat: tran int, sai bien 10^d - 1, dung log10 so thuc (DIGITS);
+  tran int, luu vi tri cuoi, quen tien to rong, thu do dai lon truoc (SEVENS); dem do cao phan biet,
+  so sanh nguoc dau, xoa ca ngan xep (POSTER); DSU khong luu quan he khac khu, sai do lech,
+  sap xep tang dan (PRISON).
+- SEVENS: bo test co cac day "khoi" lam dap an chi khoang N/7 de loai cach thu do dai lon truoc.
+- Ban Python: moi bai < 0,7 giay.
+
+PHAN BO TEST VA DIEM MOI TEST (theo ma tran de: Thong hieu / Van dung / Van dung cao)
+DIGITS (6 diem): ST1 60% TEST01-24 (TH) | ST2 40% TEST25-40 (VD)                         -> 0,15 diem/test
+SEVENS (6 diem): ST1 40% TEST01-16 (TH) | ST2 30% TEST17-28 (VD) | ST3 30% TEST29-40 (VDC) -> 0,15 diem/test
+POSTER (5 diem): ST1 40% TEST01-16 (VD) | ST2 30% TEST17-28 (VDC)| ST3 30% TEST29-40 (VDC) -> 0,125 diem/test
+PRISON (3 diem): ST1 30% TEST01-12 (VD) | ST2 30% TEST13-24 (VD) | ST3 40% TEST25-40 (VDC) -> 0,075 diem/test

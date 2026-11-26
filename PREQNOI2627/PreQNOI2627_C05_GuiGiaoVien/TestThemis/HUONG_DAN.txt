@@ -1,0 +1,28 @@
+KY THI SO 05 - KHAO SAT DOI TUYEN HSG THPT - MON TIN HOC - NAM HOC 2026-2027
+==========================================================================
+
+Nguon de (da Viet hoa, doi boi canh):
+  CARDS : JOIG 2025 (5th Women's Div.) Chung ket - Bai 1 "Card Game 4"
+  JEWEL : JOI 2025/2026 Semifinal - Bai 2 "Jeweler"
+  VOTE  : JOIG 2025 Chung ket - Bai 3 "School Trip"
+  SKILL : JOI 2024/2025 Vong loai 2 - Bai 2 "Billiards"
+  https://www.ioi-jp.org/problem_archive
+
+1. Statements/          : de thi PreQNOI2627_C05_Statement.docx/.pdf
+2. Tasks/               : bo test cham bang Themis, moi bai 40 test
+                          Tasks/<TEN_BAI>/TESTxx/<TEN_BAI>.INP, <TEN_BAI>.OUT + Settings.cfg
+3. Contestants/Jury/    : loi giai C++14 cho tung subtask (TEN_BAI_SUBk.CPP);
+                          TEN_BAI.CPP = loi giai day du. Editorial/Jury la ban sao.
+                          Bien dich: g++ -std=c++14 -O2
+
+Thoi gian 1 giay/test, bo nho 1024 MB. So sanh output: bo qua khoang trang.
+Cac vi du trong de la TEST01, TEST02 cua moi bai.
+Moi loi giai SUBk da chay dung toan bo test cua subtask k; loi giai day du
+dung 160/160 test, thoi gian lon nhat < 0,2 giay. Da doi chieu ngau nhien
+400 bo test nho voi loi giai trau; huong giai khop loi giai chinh thuc cua JOI.
+
+PHAN BO TEST VA DIEM MOI TEST (theo ma tran de: Thong hieu / Van dung / Van dung cao)
+CARDS (6 diem): ST1 60% TEST01-24 (TH) | ST2 40% TEST25-40 (VD)                        -> 0,15 diem/test
+JEWEL (6 diem): ST1 40% TEST01-16 (TH) | ST2 30% TEST17-28 (VD) | ST3 30% TEST29-40 (VDC) -> 0,15 diem/test
+VOTE  (5 diem): ST1 40% TEST01-16 (VD) | ST2 30% TEST17-28 (VDC)| ST3 30% TEST29-40 (VDC) -> 0,125 diem/test
+SKILL (3 diem): ST1 30% TEST01-12 (VD) | ST2 30% TEST13-24 (VD) | ST3 40% TEST25-40 (VDC) -> 0,075 diem/test

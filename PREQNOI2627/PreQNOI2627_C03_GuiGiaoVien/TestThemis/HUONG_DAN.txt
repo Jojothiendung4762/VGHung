@@ -1,0 +1,18 @@
+KY THI SO 03 - KHAO SAT DOI TUYEN HSG THPT - MON TIN HOC - NAM HOC 2026-2027
+==========================================================================
+
+1. DeThi/    : de thi PREQNOI_2627_CONTEST_03.docx (dung mau trinh bay chuan)
+2. Tests/    : bo test cham bang Themis, moi bai 40 test
+               Tests/<TEN_BAI>/TESTxx/<TEN_BAI>.INP, <TEN_BAI>.OUT
+3. LoiGiai/  : loi giai C++17 cho tung subtask (TEN_BAI_SUBk.CPP); loi giai subtask cuoi la loi giai day du
+               Bien dich: g++ -std=c++17 -O2
+4. BaiGiang/ : bai giang huong dan thuat toan (Beamer 16:9: PDF + ma nguon .tex, bien dich bang XeLaTeX)
+
+Thoi gian 1 giay/test, bo nho 1024 MB. So sanh output: bo qua khoang trang.
+Cac vi du trong de da duoc dua vao bo test va kiem tra la dung.
+
+PHAN BO TEST VA DIEM MOI TEST
+BUS      (6 diem): ST1 60% TEST01-24 | ST2 40% TEST25-40                          -> 0,15 diem/test
+WATER    (6 diem): ST1 40% TEST01-16 | ST2 30% TEST17-28 | ST3 30% TEST29-40       -> 0,15 diem/test
+RESERVE  (5 diem): ST1 40% TEST01-16 | ST2 30% TEST17-28 | ST3 30% TEST29-40       -> 0,125 diem/test
+TIDE     (3 diem): ST1..ST5 moi subtask 20%, 8 test: TEST01-08 | 09-16 | 17-24 | 25-32 | 33-40 -> 0,075 diem/test

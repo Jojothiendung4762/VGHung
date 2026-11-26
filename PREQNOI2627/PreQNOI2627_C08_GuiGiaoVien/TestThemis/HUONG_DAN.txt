@@ -1,0 +1,52 @@
+KY THI SO 08 - KHAO SAT DOI TUYEN HSG THPT - MON TIN HOC - NAM HOC 2026-2027
+==========================================================================
+
+Nguon de (da Viet hoa, doi boi canh; moi bai mot nuoc):
+  SUGAR   : Baekjoon Online Judge (Han Quoc) - Bai 2839 "Giao duong"
+            https://www.acmicpc.net/problem/2839
+  GIFTS   : NOIP 2007 Pho cap (Trung Quoc) - "Phan nhom qua luu niem" (Luogu P1094)
+            https://www.luogu.com.cn/problem/P1094
+  KBASE   : Timus Online Judge (Nga) - Bai 1009 "K-based Numbers"; subtask 2, 3 mo rong
+            (N toi 10^18, lay du 10^9+7, luy thua ma tran). https://acm.timus.ru/problem.aspx?num=1009
+  COUNTER : AtCoder Beginner Contest 138 (Nhat Ban) - Bai D "Ki"
+            https://atcoder.jp/contests/abc138/tasks/abc138_d
+Bai 1, 2 o muc rat de, hoc sinh khong chuyen lam duoc. Bai 3, 4: subtask dau quen thuoc,
+subtask cuoi phan loai doi tuyen.
+
+1. Statements/          : de thi PreQNOI2627_C08_Statement.pdf (dan trang bang LaTeX, 4 trang)
+                          va PreQNOI2627_C08_Statement.docx (ban Word de chinh sua).
+                          Statements/LaTeX/ : file .tex goc (bien dich XeLaTeX).
+2. Tasks/               : bo test cham bang Themis, moi bai 40 test
+                          Tasks/<TEN_BAI>/TESTxx/<TEN_BAI>.INP, <TEN_BAI>.OUT + Settings.cfg
+                          Settings.cfg da cau hinh san: 1 giay, 1024 MB, diem moi test (bang duoi),
+                          so sanh output bo qua khoang trang (C1LinesWordsIgnoreCase).
+                          Test.zip = ban nen cua 4 thu muc bai.
+3. Editorial/Jury/      : loi giai C++14 cho tung subtask (TEN_BAI_SUBk.CPP);
+                          TEN_BAI.CPP = loi giai day du; TEN_BAI.PY = loi giai day du bang Python.
+                          Bien dich: g++ -std=c++14 -O2 (chuan C++14 cua Themis). Code.zip = ban nen.
+   Contestants/Jury/    : loi giai day du dat ten theo Themis (TEN_BAI.cpp) de cham thu.
+4. Editorial/Slides/    : bai giang huong dan (Beamer 16:9, PDF + .tex, bien dich bang XeLaTeX).
+5. Editorial/Generator/ : chuong trinh sinh test (gen.py), kiem tra rang buoc (validate.py),
+                          ma MD5 cua bo test (MD5SUMS.txt).
+
+Thoi gian 1 giay/test, bo nho 1024 MB. Cac vi du trong de la TEST01, TEST02 cua moi bai.
+Ngon ngu: C++ va Python (theo cau truc de HSG cap tinh Quang Ninh).
+
+KIEM TRA BO TEST
+- Validator kiem tra moi test dung rang buoc chung va rang buoc cua subtask chua no
+  (COUNTER: kiem tra do thi la cay lien thong).
+- Loi giai day du dung 160/160 test, thoi gian lon nhat < 0,2 giay.
+- Moi loi giai SUBk dung toan bo test cua subtask k; loi giai cua subtask truoc bi loai
+  (sai/qua gio) o phan lon test cua cac subtask sau.
+- Doi chieu khoang 1.400 bo test nho ngau nhien voi loi giai trau doc lap (SUGAR: thu moi
+  cach; GIFTS: quay lui moi cach ghep; KBASE: sinh moi so; COUNTER: cong theo tung to tien).
+- 12 loi giai sai co y deu bi bat: tham lam khong lui, lui 1 buoc, tran int (SUGAR); ghep lien
+  ke, dung < thay <=, dung cong thuc ceil(N/2) (GIFTS); cho phep chu so dau bang 0, sai so mu,
+  QHD tuyen tinh voi N lon (KBASE); tran int, coi a la cha cua b, chi cong cho con truc tiep (COUNTER).
+- Ban Python: ca 4 bai < 0,6 giay o test lon nhat.
+
+PHAN BO TEST VA DIEM MOI TEST (theo ma tran de: Thong hieu / Van dung / Van dung cao)
+SUGAR   (6 diem): ST1 60% TEST01-24 (TH) | ST2 40% TEST25-40 (VD)                         -> 0,15 diem/test
+GIFTS   (6 diem): ST1 40% TEST01-16 (TH) | ST2 30% TEST17-28 (VD) | ST3 30% TEST29-40 (VDC) -> 0,15 diem/test
+KBASE   (5 diem): ST1 40% TEST01-16 (VD) | ST2 30% TEST17-28 (VDC)| ST3 30% TEST29-40 (VDC) -> 0,125 diem/test
+COUNTER (3 diem): ST1 30% TEST01-12 (VD) | ST2 30% TEST13-24 (VD) | ST3 40% TEST25-40 (VDC) -> 0,075 diem/test

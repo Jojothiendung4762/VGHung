@@ -1,0 +1,55 @@
+KY THI SO 09 - KHAO SAT DOI TUYEN HSG THPT - MON TIN HOC - NAM HOC 2026-2027
+==========================================================================
+
+Nguon de (da Viet hoa, doi boi canh; moi bai mot nuoc):
+  BILLBOARD : USACO 2017 December, Bronze (Hoa Ky) - Bai 1 "Blocked Billboard"; subtask 2 mo rong
+              toa do toi 10^9. https://usaco.org/index.php?page=viewproblem2&cpid=759
+  MARBLES   : COCI 2012/2013 Vong 1 (Croatia) - "Ljubomora"
+              https://hsin.hr/coci/archive/2012_2013/  (Luogu P7585)
+  SCORE     : Codeforces Round 260 (Nga) - Bai 455A "Boredom"; subtask 3 mo rong a_i toi 10^9.
+              https://codeforces.com/problemset/problem/455/A
+  DISTSUM   : AtCoder Beginner Contest 220 (Nhat Ban) - Bai F "Distance Sums 2"
+              https://atcoder.jp/contests/abc220/tasks/abc220_f
+Bai 1, 2 o muc de - trung binh. Bai 3, 4: subtask dau quen thuoc, subtask cuoi phan loai.
+
+1. Statements/          : de thi PreQNOI2627_C09_Statement.pdf (dan trang bang LaTeX, 4 trang)
+                          va PreQNOI2627_C09_Statement.docx (ban Word de chinh sua, 5 trang).
+                          Statements/LaTeX/ : file .tex goc (bien dich XeLaTeX).
+2. Tasks/               : bo test cham bang Themis, moi bai 40 test
+                          Tasks/<TEN_BAI>/TESTxx/<TEN_BAI>.INP, <TEN_BAI>.OUT + Settings.cfg
+                          Settings.cfg da cau hinh san: 1 giay, 1024 MB, diem moi test (bang duoi),
+                          so sanh output bo qua khoang trang (C1LinesWordsIgnoreCase).
+                          Test.zip = ban nen cua 4 thu muc bai.
+3. Editorial/Jury/      : loi giai C++14 cho tung subtask (TEN_BAI_SUBk.CPP);
+                          TEN_BAI.CPP = loi giai day du; TEN_BAI.PY = loi giai day du bang Python.
+                          Code trinh bay theo phong cach su pham: dau moi file co chu thich ten bai,
+                          nguon, y tuong, do phuc tap; cac buoc Doc - Xu ly - Ghi duoc danh so;
+                          ten bien co nghia; khong dung de quy sau (an toan voi ngan xep cua Themis).
+                          Bien dich: g++ -std=c++14 -O2 (chuan C++14 cua Themis). Code.zip = ban nen.
+   Contestants/Jury/    : loi giai day du dat ten theo Themis (TEN_BAI.cpp) de cham thu.
+4. Editorial/Slides/    : bai giang huong dan (Beamer 16:9, PDF + .tex, bien dich bang XeLaTeX).
+5. Editorial/Generator/ : chuong trinh sinh test (gen.py), kiem tra rang buoc (validate.py),
+                          ma MD5 cua bo test (MD5SUMS.txt).
+
+Thoi gian 1 giay/test, bo nho 1024 MB. Cac vi du trong de la TEST01, TEST02 cua moi bai.
+Ngon ngu: C++ va Python (theo cau truc de HSG cap tinh Quang Ninh).
+
+KIEM TRA BO TEST
+- Validator kiem tra moi test dung rang buoc chung va rang buoc cua subtask chua no
+  (BILLBOARD: hai bang khong chong nhau; DISTSUM: du lieu dung la cay).
+- Loi giai day du dung 160/160 test, thoi gian lon nhat khoang 0,12 giay.
+- Moi loi giai SUBk dung toan bo test cua subtask k; loi giai cua subtask truoc bi loai
+  (sai/qua gio) o phan lon test cua cac subtask sau.
+- Doi chieu khoang 1.900 bo test nho ngau nhien voi loi giai trau doc lap (BILLBOARD: dem o vuong;
+  MARBLES: thu moi muc ghen; SCORE: mo phong dung luat choi bang de quy co nho; DISTSUM: Floyd).
+- 14 loi giai sai co y deu bi bat: tran int, khong kiem tra rieng tung chieu cua phan giao
+  (xe nam cheo), chi kiem tra mot chieu (BILLBOARD); tran int, bien chat nhi phan lech 1,
+  cong thuc tong/N, thu tuan tu (MARBLES); tran int, coi moi gia tri ke nhau la xung dot,
+  bo qua xung dot (SCORE); tran int, sai cong thuc doi goc (DISTSUM).
+- Ban Python: moi bai < 0,7 giay.
+
+PHAN BO TEST VA DIEM MOI TEST (theo ma tran de: Thong hieu / Van dung / Van dung cao)
+BILLBOARD (6 diem): ST1 60% TEST01-24 (TH) | ST2 40% TEST25-40 (VD)                         -> 0,15 diem/test
+MARBLES   (6 diem): ST1 40% TEST01-16 (TH) | ST2 30% TEST17-28 (VD) | ST3 30% TEST29-40 (VDC) -> 0,15 diem/test
+SCORE     (5 diem): ST1 40% TEST01-16 (VD) | ST2 30% TEST17-28 (VDC)| ST3 30% TEST29-40 (VDC) -> 0,125 diem/test
+DISTSUM   (3 diem): ST1 30% TEST01-12 (VD) | ST2 30% TEST13-24 (VD) | ST3 40% TEST25-40 (VDC) -> 0,075 diem/test
