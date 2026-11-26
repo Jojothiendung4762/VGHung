@@ -10,5 +10,5 @@ int main() {
     ll n;
     int x,y;
     cin >> n >> x >> y;
-    cout << n * x + (ll)(n / 3) * y;
+    cout << (ll)(n * x) + (ll)((n / 3) * y);
 }
