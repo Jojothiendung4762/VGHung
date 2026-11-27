@@ -16,8 +16,7 @@ int main() {
     freopen("LANTERN.OUT","w",stdout);
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    ll n;
-    int a,b;
+    ll n,a,b;
     cin >> n >> a >> b;
     ll bcnn = a / gcd(a,b) * b;
     ll sa = a % d * tong(n / a) % d;
