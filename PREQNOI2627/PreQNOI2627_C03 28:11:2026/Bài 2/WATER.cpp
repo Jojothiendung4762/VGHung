@@ -20,6 +20,7 @@ int main() {
     for (int i = 2;i <= n;i++) {
         cay[i] += cay[i - 1];
     }
+    sort(cay.begin() + 1,cay.end() - 1);
     ll t;
     while (q--) {
         cin >> t;
